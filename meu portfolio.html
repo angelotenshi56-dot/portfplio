@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ângelo · Portfólio (Modo Escuro)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0b1120; /* fundo escuro profundo */
+            color: #e2e8f0; /* texto claro */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.5;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #3b82f6, #60a5fa); /* azul mais vibrante no escuro */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: 500;
+            color: white;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #93c5fd, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin-top: 0.5rem;
+        }
+
+        /* SEÇÃO SOBRE */
+        .sobre {
+            background: #1e293b; /* card escuro */
+            border-radius: 2rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5);
+            border: 1px solid #334155;
+        }
+
+        .sobre h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #f1f5f9;
+        }
+
+        .destaque {
+            background: #0f172a; /* ainda mais escuro para contraste */
+            border-left: 6px solid #3b82f6; /* azul */
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin: 1.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .destaque .mensagem-autista {
+            font-weight: 500;
+            color: #93c5fd;
+        }
+
+        .feedback-note {
+            background: #1e293b;
+            border-radius: 2rem;
+            padding: 1rem 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #93c5fd;
+            font-weight: 500;
+            margin-top: 1rem;
+            border: 1px solid #334155;
+        }
+
+        /* FOOTER / CONTATO */
+        footer {
+            margin-top: 3rem;
+            background: #1e293b;
+            border-radius: 2rem;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        .github-corner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            background: #3b82f6; /* azul */
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 3rem;
+            width: fit-content;
+            margin: 0 auto 1.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .github-corner:hover {
+            background: #2563eb; /* azul mais escuro */
+        }
+
+        footer p {
+            color: #94a3b8;
+            max-width: 500px;
+            margin: 0.5rem auto;
+        }
+
+        footer small {
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- CABEÇALHO -->
+        <header>
+            <div class="avatar">🪄</div>
+            <h1>Ângelo</h1>
+            <p>desenvolvedor web & criador de experiências digitais</p>
+        </header>
+
+        <!-- SEÇÃO SOBRE (com a mensagem especial) -->
+        <section class="sobre">
+            <h2>👋 prazer, eu sou o Ângelo</h2>
+            <div class="destaque">
+                <p class="mensagem-autista">🌟 Meu nome é Ângelo, eu sei criar sites e sou autista.</p>
+                <p>💬 <strong>Quando fizer algo errado, me falem.</strong> Estou sempre aberto a feedbacks e adoro aprender com quem me acompanha.</p>
+            </div>
+            <p>Tenho paixão por transformar ideias em páginas funcionais e bonitas. Uso HTML, CSS e JavaScript para criar projetos que comunicam e encantam. Acredito que a web deve ser um lugar acessível para todos, e cada linha de código é uma oportunidade de melhorar.</p>
+            <div class="feedback-note">
+                <span>🧩</span> Meu jeito autista de pensar traz detalhes únicos para meus códigos — se algo parecer diferente, é por design 😊
+            </div>
+        </section>
+
+        <!-- RODAPÉ COM GITHUB E FEEDBACK -->
+        <footer>
+            <a href="https://github.com/angelotenshi56-dot/" target="_blank" class="github-corner">
+                <span>🐙</span> meu github: angelotenshi56-dot
+            </a>
+            <p>💬 encontrou algo estranho? quer dar um toque?</p>
+            <p><strong>fique à vontade para abrir uma issue no repositório ou me chamar por lá.</strong> Toda dica é bem-vinda!</p>
+            <small>© 2025 Ângelo · site feito com HTML e carinho</small>
+        </footer>
+    </div>
+</body>
+</html>
